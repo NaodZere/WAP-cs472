@@ -1,0 +1,9 @@
+.one{
+    column-count: 2;
+    column-gap: 2em;
+    column-rule-color: red;
+}
+.two{
+    /* column-count: 1; */
+
+}

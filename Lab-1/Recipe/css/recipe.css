@@ -1,9 +1,9 @@
 
 body{
-    color: #A4A400;
+    background-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
     font-size: 11pt;
-    font-family: georgia, Garamoned,;
-}
+    font-family: 'georgia', 'Garamoned',
+ }
 
 a{
     color: #A4A400;
@@ -12,7 +12,7 @@ a{
 h1,h2{
     color: #A4A400;
     background-color: #f0f0f0;
-    font-family: Lucida Sans', Unicodes', Helvetica, Arial, sans-serif;
+    font-family: ', Lucida' 'Sans', 'Unicodes', Helvetica, Arial, sans-serif;
     font-size: 18pt;
     text-decoration: underline;
 
@@ -29,10 +29,15 @@ em{
     text-decoration: line-through;
 
 }
-div{
+.di{
     background-color: #FFFFA8;
     font-style: italic;
     margin-left: 40px;
 }
+
+div.right{
+    padding-left: 70%;
+}
+
 
 
