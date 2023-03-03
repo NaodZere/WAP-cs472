@@ -79,6 +79,7 @@ button{
   #back > a{
     margin-left: 8px;
     color: red;
+    text-decoration: none;
     
     
   }
@@ -91,5 +92,8 @@ button{
     color: white;
     size: px;
 
+  }
+  div  a{
+    text-decoration: none;
   }
     
