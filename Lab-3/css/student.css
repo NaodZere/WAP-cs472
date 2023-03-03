@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(109, 233, 233);
+}
+button{
+    color: rgb(238, 244, 238);
+    background-color: rgb(8, 121, 32);
+}
+h1{
+    color: darkblue;
+    text-align: center;
+    padding-bottom: 52mm;
+}
+.container{
+    border: 2mm solid gray;
+    /* margin: 22mm; */
+    padding: 22mm;
+}
+.mid{
+    text-align: center;
+    padding: 2mm;
+}
+
+label{
+    margin-bottom: 2mm;
+    padding-top: 2mm;
+}
+
+input{
+    margin-bottom: 2mm;
+    padding-top: 2mm;
+}

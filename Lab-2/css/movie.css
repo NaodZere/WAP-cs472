@@ -1,9 +1,142 @@
-.one{
+
+body{
+    background-image: url(../images/background.png);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+.Container{
     column-count: 2;
-    column-gap: 2em;
+    column-gap: 1em;
     column-rule-color: red;
+    border: 2px solid gray;
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    
+   
 }
 .two{
-    /* column-count: 1; */
+    column-count: 2;
+    /* border: 2px solid gray; */
+    display: flex;
+    padding: 6mm;
+    width: 550px;
+    height: 790px;
 
 }
+h1{
+    text-align: center;
+    
+}
+.headerImg{
+    width: 100% ;
+
+}
+
+
+.imgTwo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    
+
+  }
+
+
+.rbgImg {
+  position: absolute; /* Position the image absolutely */
+  width: 35.5%; /* Stretch the image to fill the container horizontally */
+  height: 83px; /* Set height to auto to maintain aspect ratio */
+}
+
+
+  .number {
+    position: absolute;
+    font-size: 55px;
+    font-weight: bold;
+    color: #e62121;
+    /* background-color: #18ed46; */
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .two-mid{
+    /* border: 2px solid gray; */
+    break-inside: avoid-column;
+    margin-left: auto;
+    
+  }
+
+  .two-mid img{
+    float: left;
+  }
+  .mid-one{
+    border: 2px solid gray;
+    border-radius: 2em;
+    margin: 6mm;
+  }
+  .two-left{
+    /* border: 2px solid gray; */
+    break-inside: avoid-column;
+    height: 70px;
+
+  }
+  .two-left img{
+    float: left;
+  }
+  .left-one{
+    border: 2px solid gray;
+    border-radius: 1em;
+    margin: 2em;
+  }
+  .two-right{
+    
+    /* border: 3px solid green; */
+    background-color: #A2B964;
+    margin-left: 16em;
+    margin-bottom: 8mm;
+    width: auto;
+    height: 935px;
+  }
+  .date {
+    background-color: #A2B964;
+    padding: 3.8%;
+    padding-left: 100%;
+    width: 100%;
+    
+  }
+  footer{
+    color: #A2B964;
+  }
+
+
+  .two-right div{
+    float:left;
+  }
+
+
+  .valid{
+    text-align:end;
+    margin-left: 5px;
+    display: inline;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+
+  }
+
+
+
+
+
+
+  
