@@ -9,37 +9,43 @@
 </head>
 <body>
 
-      
     
-    <form action="http://mumstudents.org/params.php" method="post">
+    <form action="https://mumstudents.org/params.php" method="post">
         <div class="container">
         <h1>Retrieve your grade</h1>
+
            
             <div class="mid">
                 
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br>
+                <input type="text" id="name" name="name" required placeholder="Studnet Name"><br>
               
                 <label for="id">Student ID:</label>
-                <input type="text" id="id" name="id"><br>
+                <input type="text" id="id" name="id" required placeholder="Student Id"><br>
               
-                <label for="assignment">Select an assignment:</label>
-                <select id="assignment" name="assignment">
-                  <option value="assignment1">Assignment 1</option>
-                  <option value="assignment2">Assignment 2</option>
-                  <option value="assignment3">Assignment 3</option>
+                <label for="assignment">Select A Course:</label>
+                <select id="assignment" name="assignment " required>
+                  <option value="assignment1">MWA</option>
+                  <option value="assignment2">WAA</option>
+                  <option value="assignment3">WAP</option>
+                  <option value="assignment3">EA</option>
+                  <option value="assignment3">SA</option>
+                  <option value="assignment3">SE</option>
+                  <option value="assignment3">MPP</option>
+                  <option value="assignment3">FPP</option>
+
+
                 </select><br>
               
                 <label for="entry">Student entry:</label>
-                <input type="radio" id="entry" name="entry" value="undergrad">
                 <label for="undergrad">Undergraduate</label>
-                <input type="radio" id="entry" name="entry" value="grad">
+                <input type="radio" id="entry" name="entry" value="undergrad" required>
                 <label for="grad">Graduate</label><br>
-              
+                <input type="radio" id="entry" name="entry" value="grad" required>
                 <label for="confirm">Confirm identity:</label>
-                <input type="checkbox" id="confirm" name="confirm"><br>
+                <input type="checkbox" id="confirm" name="confirm" required><br>
               
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" required>
             </div>
             </div>
 

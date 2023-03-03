@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(249, 244, 239);
+}
+
+.box{
+    border: 2px solid gray;
+    margin-right: 13%;
+    margin-left: 13%;
+    margin-bottom: 22%;
+
+    padding: 2%;
+    background-color: rgb(226, 226, 238);
+}
+
+.box {
+    border: 2px solid black;
+    position: relative;
+  }
+  
+  .box::before {
+    content: "New User Sign Up";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: white;
+    padding: 0 10px;
+    font-size: 1.2em;
+  }
+  
+form div{
+    padding: 2%;
+}
+span a {
+    color: red;
+}
+button{
+    color:  black;
+    background-color: rgb(243, 164, 164);
+}
+pre{
+    /* border: 1mm solid ; */
+    margin: 20%;
+    margin-bottom: 2cm;
+}
+
+#nerd{
+    /* border: 2px solid gray; */
+    margin-right: 40%;
+    margin-left: 13%;
+    margin-bottom: 9%;
+}
+    
