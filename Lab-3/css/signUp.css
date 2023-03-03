@@ -49,4 +49,14 @@ pre{
     margin-left: 13%;
     margin-bottom: 9%;
 }
+.valid{
+    text-align:end;
+    margin-left: 5px;
+    display: inline;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+
+  }
     

@@ -61,4 +61,14 @@
     color: #023404;
 
   }
+  .valid{
+    text-align:end;
+    margin-left: 5px;
+    display: inline;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+
+  }
   
