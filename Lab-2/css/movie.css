@@ -14,7 +14,7 @@ body{
     border: 2px solid gray;
     border-radius: 10px;
     border-collapse: collapse;
-    width: 60%;
+    width: 69%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -29,7 +29,7 @@ body{
     /* border: 2px solid gray; */
     display: flex;
     padding: 6mm;
-    width: 550px;
+    width: 410px;
     height: 790px;
 
 }
@@ -54,7 +54,7 @@ h1{
 
 .rbgImg {
   position: absolute; /* Position the image absolutely */
-  width: 35.5%; /* Stretch the image to fill the container horizontally */
+  width: 34.9%; /* Stretch the image to fill the container horizontally */
   height: 83px; /* Set height to auto to maintain aspect ratio */
 }
 
@@ -101,7 +101,7 @@ h1{
     
     /* border: 3px solid green; */
     background-color: #A2B964;
-    margin-left: 16em;
+    margin-left: 9em;
     margin-bottom: 8mm;
     width: auto;
     height: 935px;
