@@ -6,7 +6,7 @@ body{
     border: 2px solid gray;
     margin-right: 13%;
     margin-left: 13%;
-    margin-bottom: 22%;
+    margin-bottom: 11%;
 
     padding: 2%;
     background-color: rgb(226, 226, 238);
@@ -37,10 +37,14 @@ button{
     color:  black;
     background-color: rgb(243, 164, 164);
 }
-pre{
+.lastpart{
     /* border: 1mm solid ; */
-    margin: 20%;
-    margin-bottom: 2cm;
+    padding-left: 88px;
+    padding-right: 77px;
+    padding-bottom: 22px;
+    display:flex;
+    /* margin-bottom: cm; */
+
 }
 
 #nerd{
