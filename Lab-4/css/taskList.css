@@ -39,3 +39,13 @@ button{
 #dOne input{
     padding-left: 57px;
 }
+
+.valid{
+    margin-left: 5px;
+    display:flex;
+    right: 10px;
+    bottom: 10px;
+    margin-top: 33mm;
+
+
+  }
