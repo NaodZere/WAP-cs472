@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(207, 213, 211);
+}
+
+#box{
+     margin: 10%;
+    padding: 3%;
+    border: 2px solid blue;
+    column-count: 2;
+    display: block;
+    width: 75%;
+    
+
+}
+textarea{
+    display: flex;
+    margin-right: 42%;
+}
+
+h2{
+    color: blue;
+}
+
+button{
+    display: flex;
+    padding-left: 77px;
+    padding-right: 77px;
+    margin-bottom: 4mm;
+}
+#dOne{
+    padding-bottom: 22px;
+    display: inline;
+}
+
+#dOne label{
+    display: block;
+}
+
+#dOne input{
+    padding-left: 57px;
+}

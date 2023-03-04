@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <script>
+
+    // Get the elements from the HTML
+const taskInput = document.getElementById("task");
+const taskList = document.getElementById("taskList");
+const addTaskButton = document.getElementsByTagName("add")[0];
+const clearTasksButton = document.getElementsByTagName("button")[1];
+
+// Load the saved task list from localStorage
+if(localStorage.getItem("tasks")){
+  taskList.value = localStorage.getItem("tasks");
+}
+
+// Add task to the task list
+addTaskButton.addEventListener("click", function(event){
+  event.preventDefault();
+  if(taskInput.value.trim() === ""){ // Check if the input is empty or just spaces
+    alert("Please enter a task.");
+    return;
+  }
+  taskList.value += taskInput.value + "\n"; // Append the task to the task list
+  taskInput.value = ""; // Clear the input
+  saveTasks(); // Save the task list to localStorage
+});
+
+// Clear the task list
+clearTasksButton.addEventListener("click", function(event){
+  event.preventDefault();
+  taskList.value = "";
+  localStorage.removeItem("tasks"); // Remove the task list from localStorage
+});
+
+// Save the task list to localStorage
+function saveTasks(){
+  localStorage.setItem("tasks", taskList.value);
+}
+
+</script> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/taskList.css">
+    <!-- <link rel="stylesheet" href="../js/taskList.js"> -->
+    <title>Task List App</title>
+</head>
+<body>
+
+    <div id="box">
+        <form action="">
+
+            <h2>Task List</h2>
+
+            <label for="task">Task</label><br>
+            <input type="text" id="task" name="task"><br>
+            <button id="add">Add Task</button><br>
+            <button id="clear">Clear Tasks</button>
+            
+            <span>Task List</span>
+            <textarea name="taskList" id="taskList" cols="30" rows="10"></textarea>
+
+        </form>
+    </div>
+    
+</body>
+</html>

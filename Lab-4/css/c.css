@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(183, 215, 204);
+}
+
+.box{
+    display: flex;
+    width: 50%;
+    margin-left: 30%;
+}
+input{
+    margin-top: 4mm;
+}
+button{
+    margin-top: 4mm;
+}
