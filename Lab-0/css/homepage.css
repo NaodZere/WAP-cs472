@@ -1,11 +1,12 @@
 body{
     display: flex;
     background-color: gray;
-    background-image: url('/Lab-0/Image/motivational-quote-love-yourself-self-care-concept-written-book-cover-pen-red-white-roses-background-table-193497999.jpg');
+    background-image: url('/Lab-0/Image/flower.jpg');
     background-size:contain;
     background-position:left;
 
 }
+
 
 #Me{
 border: 1mm solid gray;
