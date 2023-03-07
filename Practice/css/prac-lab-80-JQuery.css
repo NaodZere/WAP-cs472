@@ -1,0 +1,28 @@
+body{
+    background-image: url("../images/JQueryGolderGet.webp");
+}
+
+#change_me{
+    position: absolute;
+    top: 100px;
+    left: 400px;    
+    font: 24px arial;
+}
+
+#move_up #move_down #color #disappear{
+    padding: 5px; 
+}
+
+#clickMe{
+    border: 2mm solid gray;
+}
+
+#box{
+    border: 2mm solid rgb(242, 242, 245);
+    float: right;
+}
+
+#picframe{
+    border: 2mm solid;
+    display: none;
+}

@@ -1,0 +1,33 @@
+body{
+    font-size: large;
+    padding-left: 10%;
+    background-color: rgb(249, 247, 247);
+    background-image: url("../images/BankAmericaLogo.png");
+}
+
+h2{
+    color: rgb(9, 205, 9);
+}
+
+button{
+    background-color: rgb(5, 7, 181);
+    color: white;
+}
+
+h1{
+    color: blue;
+    
+}
+
+input{
+    border-radius: 1mm;
+    border-color: rgb(3, 111, 3);
+}
+
+textarea{
+    border-radius: 1mm;
+    border-color: green;
+}
+label{
+    font-size: x-large;
+}
