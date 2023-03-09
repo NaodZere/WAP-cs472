@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../js/anim.js"></script>
+    <script defer src="../js/animation.js"></script>
+    <link rel="stylesheet" href="../css/Asii.css">
+    <title>ASCIImation</title>
+  </head>
+  <body>
+    <img id="heart" src="../images/heart.gif" alt="heart" />
+    <h1>CS472: ASCII Animation Viewer</h1>
+    <textarea name="board" id="board" cols="80" rows="20" readonly></textarea>
+
+    <div>
+      <fieldset class="controls">
+        <legend>Play Controls:</legend>
+        <button id="startbtn">Start</button>
+        <button id="stopbtn">Stop</button>
+      </fieldset>
+
+      <fieldset class="controls">
+        <legend>Animation:</legend>
+        <select name="animation" id="animationSelector">
+          <option value="blank">Blank</option>
+          <option value="exercise">Exercise</option>
+          <option value="juggler">Juggler</option>
+          <option value="bike">Bike</option>
+          <option value="dive">Dive</option>
+          <option value="custom">Custom</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="controls">
+        <legend>Size:</legend>
+        <select id="sizeSelector" name="size">
+          <option value="t">Tiny</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">Extra Large</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="controls">
+        <legend>Speed:</legend>
+        <label><input id="turbo" type="checkbox" />Turbo</label>
+      </fieldset>
+    </div>
+
+    <div id="validation">
+      
+        <a href="https://validator.w3.org/nu/?doc=https://naodzere.github.io/WAP-cs472/Lab-7/pages/Animation.html">
+            <img src="../images/w3c-html.png" alt="Valid HTML5" /></a> <br />
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://naodzere.github.io/WAP-cs472/Lab-7/css/Asii.css">
+            <img src="../images/w3c-css.png" alt="Valid CSS" /></a>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../js/ascii.js"></script>
+    <script defer src="../js/animation.js"></script>
+    <link rel="stylesheet" href="../css/ascii.css">
+    <title>ASCIImation</title>
+</head>
+<body>
+    <h1>CSE 190 M ASCII Animation Viewer</h1>
+
+    <!-- ASCII art input/output and controls -->
+    <textarea id="ascii-input"></textarea>
+
+    <button id="play-button">Play</button>
+    <button id="pause-button">Pause</button>
+    <button id="stop-button">Stop</button>
+    <button id="restart-button">Restart</button>
+
+    <label for="speed-slider">Speed:</label>
+    <input type="range" id="speed-slider" min="1" max="10" value="5">
+
+    <label for="template-dropdown">Template:</label>
+    <select id="template-dropdown">
+        <option value="star-wars">Star Wars</option>
+        <option value="the-matrix">The Matrix</option>
+    </select>
+
+    <button id="save-button">Save</button>
+
+    <!-- Animation selector and font size selector -->
+    <label for="animation-select">Choose an animation:</label>
+    <select id="animation-select">
+        <option value="">Blank</option>
+        <option value="exercise">Exercise</option>
+        <option value="juggler">Juggler</option>
+        <option value="bike">Bike</option>
+        <option value="dive">Dive</option>
+        <option value="custom">Custom</option>
+    </select>
+
+    <label for="fontsize">Font Size:</label>
+    <select id="fontsize">
+        <option value="7">Tiny</option>
+        <option value="10">Small</option>
+        <option value="12" selected>Medium</option>
+        <option value="16">Large</option>
+        <option value="24">Extra Large</option>
+        <option value="32">XXL</option>
+    </select>
+
+    <!-- ASCII art animation output -->
+    <pre id="ascii-output"></pre>
+
+</body>
+</html>

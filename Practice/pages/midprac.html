@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../js/midprac.js"></script>
+    <link rel="stylesheet" href="../css/midPrac.css">
+    <title>Kitty And Pappy</title>
+</head>
+<body>
+
+    <button id="kitty">ketty</button>
+    <img id="imgKitty" src="../images/kitty.webp" alt="Kitty"> 
+    <button id="pappy">pappy</button>
+    <img id="imgPappy" src="../images/pappy.jpeg" alt="pappy">
+
+
+    <h1>Shopping Cart</h1>
+    <ul>
+        <li> Shirt <button> Delete</button> </li>
+        <li> Tie <button>Delete</button> </li>
+        <li> Jacket <button>Delete</button> </li>
+        <li> Hat <button>Delete</button> </li>
+    </ul>
+    
+    <script>
+        (function () {
+            function DeleteItem() {
+                $(this).parent().remove();
+            }
+            $(document).ready(function () {
+                $("button").click(DeleteItem);
+            });
+        })();
+    </script>
+    
+    
+</body>
+</html>
