@@ -1,7 +1,7 @@
 body{
     display: flex;
     background-color: gray;
-    background-image: url('/Lab-0/Image/JQueryGolderGet.webp');
+    background-image: url("../Image/JQueryGolderGet.webp");
     background-size:contain;
     background-position:left;
 
