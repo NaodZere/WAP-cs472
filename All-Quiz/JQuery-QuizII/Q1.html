@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example using jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Using code fragment 1 to set the color of all <li> elements to yellow
+        $("li").each(function(idx, e) {
+          $(e).css("color", "yellow");
+          $("li").children().css("color", "blue");
+        });
+        
+        // Using code fragment 2 to set the color of all <li> elements to yellow
+        $("li").each(function() {
+          $(this).css("color", "yellow");
+        });
+        
+        // Using code fragment 3 to set the color of all <li> elements to yellow
+        $("li").each(function(idx) {
+          $(this).css("color", "yellow");
+        });
+        
+        // Output the comments to the browser console
+        console.log("This script sets the color of all <li> elements to yellow.");
+        console.log("Code fragment 1 passes two arguments to the callback function.");
+        console.log("Code fragment 2 uses the 'this' keyword to refer to the current element.");
+        console.log("Code fragment 3 passes one argument to the callback function.");
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1 <p>"Code fragment 1 passes two arguments to the callback function."</p></li>
+      <li>Item 2 <p>"Code fragment 2 uses the 'this' keyword to refer to the current element."</p></li>
+      <li>Item 3 <p>"Code fragment 3 passes one argument to the callback function.</p></li>
+    </ul>
+  </body>
+</html>

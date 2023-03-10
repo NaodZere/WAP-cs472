@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Q5</title>
+</head>
+
+<body>
+    <!-- 
+    5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span
+of text ("some text") in the following to green. -->
+
+
+    <div class="ancestors">
+        <div> (great-grandparent)
+            <ul> (grandparent)
+                <li> (direct parent)
+                    <span>some text</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            // <!—INSERT YOUR JQUERY CODE HERE - - >
+            // var parent  = $("ul").prepend();
+            // parent.css("color", "green")
+
+            //or
+            $("span").parent().parent().css("color", "green");
+        });
+    </script>
+</body>
+
+</html>

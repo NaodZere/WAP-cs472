@@ -1,17 +1,18 @@
 
+              //using jquery
+$(document).ready(function(){
+    $("#pappy").click(function(){
+        $("#imgPappy").show();
+        $("#imgKitty").hide();
+    });
 
-// $(document).ready(function(){
-//     $("#pappy").click(function(){
-//         $("#imgPappy").show();
-//         $("#imgKitty").hide();
-//     });
+    $("#kitty").click(function(){
+        $("#imgKitty").show();
+        $("#imgPappy").hide();
+    });
+});
 
-//     $("#kitty").click(function(){
-//         $("#imgKitty").show();
-//         $("#imgPappy").hide();
-//     });
-// });
-
+        //using ja querySelector
 
 // const pappy = document.querySelector("#pappy");
 // const kitty = document.querySelector("#kitty");
@@ -30,20 +31,22 @@
 
 
 
-const pappy = document.getElementById("pappy");
-const kitty = document.getElementById("kitty");
-const imgPappy = document.getElementById("imgPappy");
-const imgKitty = document.getElementById("imgKitty");
+// const pappy = document.getElementById("pappy");
+// const kitty = document.getElementById("kitty");
+// const imgPappy = document.getElementById("imgPappy");
+// const imgKitty = document.getElementById("imgKitty");
 
-pappy.addEventListener("click", function(){
-    imgPappy.style.display = "none";
-    imgKitty.style.display = "block";
-});
+// pappy.addEventListener("click", function(){
+//     imgPappy.style.display = "none";
+//     imgKitty.style.display = "block";
+// });
 
-kitty.addEventListener("click", function(){
-    imgKitty.style.display = "none";
-    imgPappy.style.display = "block";
-});
+// kitty.addEventListener("click", function(){
+//     imgKitty.style.display = "none";
+//     imgPappy.style.display = "block";
+// });
+
+
 
 
 

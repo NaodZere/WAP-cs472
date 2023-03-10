@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example using jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Using the jQuery function to select all paragraphs on the page and create a jQuery object
+        var paragraphs = $('p');
+
+        // Using the jQuery object to manipulate the selected paragraphs
+        paragraphs.css('color', 'green');
+      });
+    </script>
+  </head>
+  <body>
+    <p>* In jQuery terminology, the "jQuery function" refers to the function that is used to create a jQuery object, also known as the "jQuery constructor" or the "$" function. This function is typically used to select one or more HTML elements from the DOM and create a jQuery object that represents those elements.</p>
+    <p>* On the other hand, the "jQuery object" refers to the object that is returned by the jQuery function when it is called. This object contains a set of methods that can be used to manipulate the selected elements or perform other operations on them. In other words, the jQuery object is the result of applying the jQuery function to a set of HTML elements.</p>
+
+  </body>
+</html>

@@ -1,7 +1,7 @@
 body{
     display: flex;
     background-color: gray;
-    background-image: url('/Lab-0/Image/flower.jpg');
+    background-image: url('/Lab-0/Image/JQueryGolderGet.webp');
     background-size:contain;
     background-position:left;
 
@@ -9,7 +9,7 @@ body{
 
 
 #Me{
-border: 1mm solid gray;
+border: 1mm solid rgb(129, 146, 164);
 border-radius: 22mm;
 }
 
@@ -31,12 +31,12 @@ a{
 
 h1{
     font-size: 53px;
-    color: rgb(24, 85, 239);
+    color: rgb(239, 70, 24);
 }
 
 h3{
     /* font-size: 53px; */
-    color: rgb(24, 85, 239);
+    color: rgb(239, 27, 24);
 }
 
 

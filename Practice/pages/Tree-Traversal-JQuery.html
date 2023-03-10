@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Tree Traversal Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Select the parent element of the div with id "child"
+			var parentElement = $("#child").parent();
+			parentElement.css("background-color", "yellow");
+
+			// Select all the direct children of the ul element with id "myList"
+			var directChildren = $("#myList").children();
+			directChildren.css("font-weight", "bold");
+
+			// Select all the siblings of the h1 element with id "title"
+			var siblings = $("#title").siblings();
+			siblings.css("color", "red");
+
+			// Find all the span elements inside the div with id "container"
+			var spanElements = $("#container").find("span");
+			spanElements.css("font-style", "italic");
+            spanElements.css("color", "white")
+
+			// Select the closest ancestor element that matches the selector "ul"
+			var closestAncestor = $("#child").closest("ul");
+			closestAncestor.css("background-color", "gray");
+
+			// Select the next sibling element of the li element with id "item1"
+			var nextSibling = $("#item1").next();
+			nextSibling.css("text-decoration", "underline");
+
+			// Select the previous sibling element of the li element with id "item2"
+			var prevSibling = $("#item2").prev();
+			prevSibling.css("text-transform", "uppercase");
+		});
+	</script>
+</head>
+<body>
+	<h1 id="title">jQuery Tree Traversal Example</h1>
+	<div id="container">
+		<ul id="myList">
+			<li id="item1">Item 1</li>
+			<li id="item2">Item 2</li>
+			<li id="child">
+				Child Element
+				<span>Span Element</span>
+			</li>
+			<li>Item 4</li>
+		</ul>
+	</div>
+</body>
+
+
+
+
+
+<title>jQuery .detach() Method Example</title>
+
+<script>
+    $(document).ready(function() {
+        // Click event handler for the "Detach" button
+        $("#detach-btn").click(function() {
+            // Detach the first paragraph element from the DOM and store it in a variable
+            var detachedElement = $("p:first-of-type").detach();
+
+            // Append the detached element to the end of the body element
+            $("body").append(detachedElement);
+        });
+    });
+</script>
+
+
+<body>
+	<p>This is the first paragraph.</p>
+	<p>This is the second paragraph.</p>
+	<button id="detach-btn">Detach</button>
+</body>
+
+</html>

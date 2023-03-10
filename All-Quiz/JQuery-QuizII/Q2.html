@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example using jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("div:has(ul)").css("color", "blue");
+      });
+    </script>
+  </head>
+  <body>
+    <div>no ul here </div>
+    <div>
+      This does contain a ul.
+      <ul>
+        <li>the first item</li>
+        <li>the second item</li>
+      </ul>
+    </div>
+  </body>
+</html>

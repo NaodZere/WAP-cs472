@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webville Eatery Menu</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-- 4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu
+described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by
+"Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies
+these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new
+requirement. -->
+
+	<script>
+		$(document).ready(function() {
+		  var replacementText = "Mashed Potatoes";
+		  
+		  $('.veg').click(function() {
+		    var turkeyItems = $('.turkey');
+		    
+		    turkeyItems.each(function() {
+		      $(this).text($(this).text().replace("Turkey", replacementText));
+		    });
+		    
+		    $('.non-veg').hide();
+		    $(this).hide();
+		    $('.back').show();
+		  });
+		
+		  $('.back').click(function() {
+		    $('.non-veg').show();
+		    $(this).hide();
+		    $('.veg').show();
+		  });
+		});
+	</script>
+	<style>
+		.non-veg {
+			background-color: #FFCCCC;
+			padding: 5px;
+			margin: 5px;
+			border: 1px solid red;
+		}
+		
+		.veg {
+			background-color: #CCFFCC;
+			padding: 5px;
+			margin: 5px;
+			border: 1px solid green;
+		}
+	</style>
+
+	<h1>Webville Eatery Menu</h1>
+	<div class="menu">
+		<h2>Non-Vegetarian Dishes</h2>
+		<ul class="non-veg">
+			<li>Chicken Curry <span class="turkey">(Turkey)</span></li>
+			<li>Beef Stew</li>
+			<li>Pork Chops <span class="turkey">(Turkey)</span></li>
+		</ul>
+		<h2>Vegetarian Dishes</h2>
+		<ul class="veg">
+			<li>Vegetable Curry</li>
+			<li>Spinach and Paneer</li>
+			<li>Mixed Vegetable Stir Fry</li>
+		</ul>
+		<button class="back" style="display: none;">Back to Non-Veg</button>
+	</div>
+</body>
+</html>
