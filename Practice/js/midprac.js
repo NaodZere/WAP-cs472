@@ -1,16 +1,26 @@
 
-              //using jquery
-$(document).ready(function(){
-    $("#pappy").click(function(){
-        $("#imgPappy").show();
-        $("#imgKitty").hide();
-    });
+//using jquery
+// $(document).ready(function () {
+//     $("#imgPappy").hide();
+//     $("#pappy").click(function () {
+//         $("#imgPappy").show();
+//         $("#imgKitty").hide();
+//     });
 
-    $("#kitty").click(function(){
-        $("#imgKitty").show();
-        $("#imgPappy").hide();
-    });
-});
+//     $("#kitty").click(function () {
+//         $("#imgKitty").show();
+//         $("#imgPappy").hide();
+//     });
+// });
+
+
+
+
+
+
+
+
+
 
         //using ja querySelector
 

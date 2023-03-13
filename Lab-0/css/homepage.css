@@ -27,7 +27,14 @@ border-radius: 22mm;
 a{
     color: rgb(84, 234, 181);
     font-size:x-large;    
+    
 }
+a:hover{
+    color: rgb(255, 111, 0);
+}
+/* a:visited{
+    color: purple;
+} */
 
 h1{
     font-size: 53px;
@@ -37,6 +44,10 @@ h1{
 h3{
     /* font-size: 53px; */
     color: rgb(239, 27, 24);
+}
+li{
+    list-style-type: upper-roman;
+
 }
 
 

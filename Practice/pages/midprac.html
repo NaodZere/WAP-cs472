@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,58 @@
     <link rel="stylesheet" href="../css/midPrac.css">
     <title>Kitty And Pappy</title>
 </head>
+
 <body>
 
-    <button id="kitty">ketty</button>
-    <img id="imgKitty" src="../images/kitty.webp" alt="Kitty"> 
-    <button id="pappy">pappy</button>
-    <img id="imgPappy" src="../images/pappy.jpeg" alt="pappy">
+    <!-- <script>
+        $(document).ready(function(){
+            $("body p").first().remove();
+        });
+    </script>
+
+    <p>param</p>
+    <p>parame3</p> -->
+
+    <div>
+        <img id="imgKitty" src="../images/kitty.webp" alt="Kitty">
+        <img id="imgPappy" src="../images/pappy.jpeg" alt="pappy">
+    </div>
+
+    <div>
+        <button id="kitty">ketty</button>
+        <button style="margin: 63px;" id="pappy">pappy </button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var imgPappy = document.getElementById('imgPappy');
+            var imgKitty = document.getElementById('imgKitty');
+            var btnPappy = document.getElementById('pappy');
+            var btnKitty = document.getElementById('kitty');
+            imgPappy.style.display = 'none';
+            btnPappy.addEventListener('click', function () {
+                imgPappy.style.display = 'block';
+                imgKitty.style.display = 'none';
+            });
+            btnKitty.addEventListener('click', function () {
+                imgKitty.style.display = 'block';
+                imgPappy.style.display = 'none';
+          });
+        });
+        // $(document).ready(function () {
+        //     $("#imgPappy").hide();
+        //     $("#pappy").click(function () {
+        //         $("#imgPappy").show();
+        //         $("#imgKitty").hide();
+        //     });
+
+        //     $("#kitty").click(function () {
+        //         $("#imgKitty").show();
+        //         $("#imgPappy").hide();
+        //     });
+        // });
+
+
+    </script>
 
 
     <!-- <h1>Shopping Cart</h1>
@@ -27,19 +74,25 @@
     
     <script>
         (function () {
-            function DeleteItem() {
+            // function DeleteItem() {
+            //     $(this).parent().remove();
+            // }
+            // $(document).ready(function () {
+            //     $("button").click(DeleteItem);
+            // });
+
+            $("button").click(function(){
                 $(this).parent().remove();
-            }
-            $(document).ready(function () {
-                $("button").click(DeleteItem);
+
             });
         })();
-    </script> -->
+    </script>
 
-<!-- <label for="slider">Select a value:</label>
+<label for="slider">Select a value:</label>
 <input type="range" id="slider" name="slider" min="0" max="100" value="50"> -->
 
-    
-    
+
+
 </body>
+
 </html>

@@ -19,7 +19,7 @@
 
 <body>
 
-    <!-- 1. Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to -->
+<!-- 1. Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to -->
 <!-- show it is just text (the red bold is gone). -->
 
 
@@ -32,10 +32,11 @@
         // <!—INSERT YOUR JQUERY CODE HERE - - >
         $(document).ready(function () {
             // Get the text of the first paragraph
-            var text = $('p:first').text();
+            var text  = $("p").first().text();
+
 
             // Set the HTML of the last paragraph to the text (without any formatting)
-            $('p:last').html(text);
+            $("p").last().html(text);
         });
 
     </script>

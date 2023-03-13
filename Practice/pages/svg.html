@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Manipulation Example</title>
+    <style>
+      /* Style the circle with a blue stroke */
+      #myCircle {
+        stroke: blue;
+        stroke-width: 50;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SVG Manipulation Example</h1>
+    <svg width="200" height="200">
+      <circle id="myCircle" cx="100" cy="100" r="50" fill="red" />
+    </svg>
+    <p>Click the button to change the fill color of the circle.</p>
+    <button onclick="changeFillColor()">Change Fill Color</button>
+
+    <script>
+      function changeFillColor() {
+        // Get the circle element
+        const circle = document.getElementById('myCircle');
+
+        // Change the fill color to green
+        circle.setAttribute('fill', 'green');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h1>AJAX Example</h1>
+
+  <div id="result"></div>
+
+  <script>
+    $(document).ready(function() {
+      $.ajax({
+        url: "https://jsonplaceholder.typicode.com/todos/1",
+        method: "GET",
+        success: function(response) {
+          // Handle the successful response here
+          $("#result").html("Title: " + response.title);
+        },
+        error: function(xhr, status, error) {
+          // Handle the error response here
+          $("#result").html("Error: " + error);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

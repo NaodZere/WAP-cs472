@@ -29,11 +29,13 @@ of text ("some text") in the following to green. -->
     <script>
         $(document).ready(function () {
             // <!—INSERT YOUR JQUERY CODE HERE - - >
-            // var parent  = $("ul").prepend();
-            // parent.css("color", "green")
+            var parent  = $(".ancestors").not('span').children();
+            parent.css("color", "green")
 
             //or
-            $("span").parent().parent().css("color", "green");
+            // $("span").parent().parent().css("color", "green");
+
+            // $("span li").parent().css("color", "green");
         });
     </script>
 </body>

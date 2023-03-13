@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Toggle Examples</title>
+    <style>
+      .active {
+        color: red;
+        font-weight: bold;
+      }
+      
+      .hidden {
+        /* display: none;  */
+        color: red
+      }
+    </style>
+  </head>
+  <body>
+    <button id="my-button">Click me!</button>
+    <div id="my-div">This is my div!</div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      const myButton = document.querySelector('#my-button');
+      const myDiv = document.querySelector('#my-div');
+
+      myButton.addEventListener('click', function() {
+        myDiv.classList.toggle('active');
+        $('#my-div').toggleClass('hidden');
+      });
+    </script>
+  </body>
+</html>
