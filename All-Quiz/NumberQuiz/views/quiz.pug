@@ -1,0 +1,13 @@
+html
+  head
+    title Quiz Game - Question #{questionNumber}
+
+  body
+    h1 Quiz Game - Question #{questionNumber}
+
+    p Sequence: #{question.sequence}
+
+    form(action='/quiz', method='post')
+      p Answer:
+      input(type='number', name='answer')
+      button(type='submit') Submit
