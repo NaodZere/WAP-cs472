@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.4",
     "pug": "^3.0.2"
   }
 }
