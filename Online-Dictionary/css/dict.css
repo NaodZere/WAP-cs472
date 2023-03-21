@@ -32,7 +32,6 @@ input{
 .search {
     /* background-color: rgb(149, 152, 162); */
     padding: 10px;
-    text-shadow: black;
     text-align: center;
     font-size: 300%;
 }
@@ -54,5 +53,6 @@ li {
 
 #w3c {
     text-align: end;
-    padding-top: 18%;
+    
+    padding-top: auto;
 }

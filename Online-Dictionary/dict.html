@@ -5,37 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="dict.js"></script>
     <link rel="stylesheet" href="./css/dict.css">
     <title>Online Dictionary</title>
 </head>
-<header class="title">
-    <h1>WAP Online Dictionary</h1>
-</header>
+
 
 
 <body>
+
+    <header class="title">
+        <h1>WAP Online Dictionary</h1>
+    </header>
+
+
     <div class="search">
         <label>Term: </label>
         <input type="text" name="word" placeholder="Enter a word" id="word">
         <input type="button" value="Lookup" id="lookup">
     </div>
     <div id="loader"><img src="ajax-loader.gif" alt=""></div>
-    <h2></h2>
-    <div>
-        <ul>
-
-        </ul>
-    </div>
     <hr>
     <div id="w3c">
-        <a href="https://webster.cs.washington.edu/validate-html.php">
-            <img src="./images/" alt="Valid HTML" /></a>
-        <a href="https://webster.cs.washington.edu/validate-css.php">
-            <img src="./images/w3c-css.png" alt="Valid CSS" /></a>
-        <a href="https://webster.cs.washington.edu/jslint/?referer">
-            <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" /></a>
+        <a href="https://validator.w3.org/nu/?doc=https://naodzere.github.io/WAP-cs472/Online-Dictionary/dict.html">
+            <img src="./images/w3c-html.png" alt="Valid HTML" ></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://naodzere.github.io/WAP-cs472/Online-Dictionary/css/dict.css">
+                <img src="./images/w3c-css.png" alt="Valid CSS" ></a>
+        <!-- <a href="https://webster.cs.washington.edu/jslint/?uri=https://naodzere.github.io/WAP-cs472/Online-Dictionary/dictionary.js"> -->
+            <img src="./images/js.png" alt="Valid JS" ></a>
     </div>
 </body>
 
