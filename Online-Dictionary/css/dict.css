@@ -1,0 +1,58 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/dicImage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+h1 {
+    margin: 2%;
+    color: rgb(5, 42, 101);
+    text-align: center;
+    font-size: 700%;
+}
+
+h2 {
+    padding: 80px;
+}
+
+.title{
+    /* background-color: rgb(95, 97, 95); */
+    padding: 6px;
+}
+input{
+    font-size: xx-large;
+}
+
+.search {
+    /* background-color: rgb(149, 152, 162); */
+    padding: 10px;
+    text-shadow: black;
+    text-align: center;
+    font-size: 300%;
+}
+
+#loader {
+    text-align: center;
+    padding: 30px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    border : 2px solid gray;
+    border-radius: 5px;
+    box-shadow: gray 0px 0px 5px;
+    width: 75%;
+}
+
+#w3c {
+    text-align: end;
+    padding-top: 18%;
+}

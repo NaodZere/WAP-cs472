@@ -1,0 +1,45 @@
+html
+  head
+    title Quiz Game
+
+  body
+    if (typeof question !== 'undefined')
+      h1 Quiz Game - Question #{quizNumber}
+
+      p Guess the next number in the Sequence: 
+      #{question.sequence}
+
+      form(action='/quiz', method='post')
+        p Your Answer:
+        input(type='number', name='answer', value='', autocomplete='off')
+
+        input(type='hidden', name='quizNumber', value=`${quizNumber}`)
+        input(type='hidden', name='score', value=`${score}`)
+
+        button(type='submit') Submit
+
+    else
+      h1 Quiz Game - Results
+
+      p You answered #{score} out of #{numQuestions} questions correctly.
+
+
+
+
+
+
+//- html
+//-   head
+//-     title Quiz Game - Question #{questionNumber}
+
+//-   body
+//-     h1 Quiz Game - Question #{questionNumber}
+
+//-     p Guess the next number in the Sequence: 
+//-     #{question.sequence}
+
+//-     form(action='/quiz', method='post')
+//-       p Your Answer:
+//-       input(type='number', name='answer')
+
+//-       button(type='submit') Submit
