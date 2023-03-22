@@ -16,8 +16,8 @@ app.post('/lookup',express.urlencoded(), function (req, res) {
 
     var con = mysql.createConnection({
         host: "localhost",
-        user: "entries",
-        password: "Test@123",
+        user: "Naod",
+        password: "@Test123",
         database: "entries"
     });
     
@@ -27,7 +27,7 @@ app.post('/lookup',express.urlencoded(), function (req, res) {
     });
 });
 
-app.listen(4000, function () {
- console.log(`Server is running on port <a href="http://localhost:4000">localhost:4000</a>`);
+app.listen(3000, function () {
+ console.log(`Server is running on port <a href="http://localhost:3000">localhost:3000</a>`);
 
 });
