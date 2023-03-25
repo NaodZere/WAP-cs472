@@ -1,0 +1,45 @@
+1. What is the difference between the following 2 statements?
+ setTimeout(booyah, 2000); 
+setTimeout(booyah(), 2000);
+
+Answer =>
+the first statement "setTimeout(booyah, 2000)" schedules the execution of the "booyah" function after a delay of 2000 milliseconds or 2 seconds. On the other hand, the second statement "setTimeout(booyah(), 2000)" immediately executes the "booyah" function and schedules the result of the function (which may be undefined) to be executed after the delay of 2000 milliseconds. In simpler words, the second statement does not schedule the execution of the function itself after a delay of 2 seconds. Instead, it schedules whatever value is returned by the "booyah" function to be executed after a delay of 2 seconds.
+
+
+ 2. What do the following 2 alerts display (answer without running the code)?
+ var myfunc = function(a, x) {
+ return a * x;
+ }; 
+var x = myfunc(2, 3);
+ var y = myfunc;
+ alert(x); 
+alert(y(2,3)); 
+ Answer => 
+In the given code, the first "alert(x)" displays the value of 6 as "myfunc(2, 3)" returns the result of multiplying 2 and 3, which is 6. The second "alert(y(2, 3))" also displays the same value of 6 because "y" refers to the same function as "myfunc". Hence, calling "y(2, 3)" is equivalent to calling "myfunc(2, 3)".
+
+
+
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!” 
+setTimeout(booyah1, 2000);
+ setTimeout(booyah2(), 2000);
+
+Answer => 
+Here are two possible implementations of booyah1 and booyah2 that would each display an alert box saying "BOOYAH!" after a delay of 2 seconds:
+Copy code
+function booyah1() {
+  alert("BOOYAH!");
+}
+
+function booyah2() {
+  return function() {
+    alert("BOOYAH!");
+  }
+}
+The first implementation of "booyah1" immediately displays an alert box upon being called. In contrast, the second implementation of "booyah2" returns a function that displays the alert box when invoked. Therefore, when "setTimeout(booyah2(), 2000)" is executed, it schedules the returned function to be executed after a delay of 2 seconds.
+
+
+
+ 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+
+Answer => 
+Unobtrusive Javascript is a web development approach that emphasizes separating Javascript behavior from HTML and CSS presentation. This approach aims to enhance web application accessibility, maintainability, and portability. By keeping Javascript code separate from HTML markup, developers can create more modular, reusable, and testable code. This separation makes it easier to update a web application's behavior without affecting its presentation or structure. Additionally, Unobtrusive Javascript promotes graceful degradation and progressive enhancement, allowing a web application to function without Javascript enabled, while providing additional functionality when it is available.

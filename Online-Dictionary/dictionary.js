@@ -16,8 +16,8 @@ app.post('/lookup',express.urlencoded(), function (req, res) {
 
     var con = mysql.createConnection({
         host: "localhost",
-        user: "Naod",
-        password: "@Test123",
+        user: "entries",
+        password: "Test@123",
         database: "entries"
     });
     
